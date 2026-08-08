@@ -248,7 +248,7 @@ const CreateInvoice = ({ existingInvoice, onSave }) => {
                         value={formData.billFrom.email}
                         onChange={(e) => handleInputChange(e, "billFrom")}
                     />
-                    <TextareaField
+                    <TextAreaField
                         label="Address"
                         name="address"
                         value={formData.billFrom.address}
@@ -278,7 +278,7 @@ const CreateInvoice = ({ existingInvoice, onSave }) => {
                         value={formData.billTo.email}
                         onChange={(e) => handleInputChange(e, "billTo")}
                     />
-                    <TextareaField
+                    <TextAreaField
                         label="Address"
                         name="address"
                         value={formData.billTo.address}
@@ -433,7 +433,7 @@ const CreateInvoice = ({ existingInvoice, onSave }) => {
                     <h3 className="text-lg font-semibold text-slate-900 mb-2">
                         Notes & Terms
                     </h3>
-                    <TextareaField
+                    <TextAreaField
                         label="Notes"
                         name="notes"
                         value={formData.notes}

@@ -106,12 +106,12 @@ const Dashboard = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {statsData.map((stat, index) => (
                     <div
-                        className="bg-white p-4 rounded-xl rounded-xl border border-slate-200 shadow-lg shadow-gray-100"
+                        className="bg-white p-4 rounded-xl border border-slate-200 shadow-lg shadow-gray-100"
                         key={index}
                     >
                         <div className="flex items-center">
                             <div
-                                className={`flex-shrink-0 w-12 h-12 ${
+                                className={`shrink-0 w-12 h-12 ${
                                     colorClasses[stat.color].bg
                                 } rounded-lg flex items-center justify-center`}
                             >
@@ -124,7 +124,7 @@ const Dashboard = () => {
                                 <div className="text-sm font-medium text-slate-500 truncate">
                                     {stat.label}
                                 </div>
-                                <div className="text-2xl font-bold text-slate-900 break-words">
+                                <div className="text-2xl font-bold text-slate-900 wrap-break-word">
                                     {stat.value}
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ const Dashboard = () => {
 
                 {recentInvoices.length > 0 ? (
                     <div className="w-[90vw] md:w-auto overflow-x-auto">
-                        <table className="w-full min-w-[600px] divide-y divide-slate-200">
+                        <table className="w-full min-w-150 divide-y divide-slate-200">
                             <thead className="bg-slate-50">
                                 <tr>
                                     <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">

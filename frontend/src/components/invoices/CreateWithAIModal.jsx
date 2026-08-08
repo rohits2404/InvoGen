@@ -72,7 +72,7 @@ export const CreateWithAIModal = ({ isOpen, onClose }) => {
                             will autofill the necessary details
                         </p>
 
-                        <TextareaField
+                        <TextAreaField
                             name="invoiceText"
                             label="Paste Invoice Text Here.."
                             value={text}

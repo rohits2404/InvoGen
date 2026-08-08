@@ -176,7 +176,7 @@ const AllInvoices = () => {
             <div className="bg-white border border-slate-200 rounded-lg shadow-sm">
                 <div className="p-4 sm:p-6 border-b border-slate-200">
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <div className="relative flex-grow">
+                        <div className="relative grow">
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <Search className="w-5 h-5 text-slate-400" />
                             </div>
@@ -188,7 +188,7 @@ const AllInvoices = () => {
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
                         </div>
-                        <div className="flex-shrink-0">
+                        <div className="shrink-0">
                             <select
                                 className="w-full sm:w-auto h-10 px-3 py-2 border border-slate-200 rounded-lg bg-white text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 value={statusFilter}

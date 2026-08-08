@@ -60,8 +60,8 @@ const InvoiceDetail = () => {
                 {/* Main Spinner with glow */}
                 <div className="relative flex flex-col items-center space-y-4">
                     <div className="relative">
-                        <Loader2 className="w-25 h-25 animate-spin text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text" />
-                        <div className="absolute inset-0 w-20 h-20 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 blur-2xl opacity-50 animate-pulse"></div>
+                        <Loader2 className="w-25 h-25 animate-spin text-transparent bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text" />
+                        <div className="absolute inset-0 w-20 h-20 rounded-full bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 blur-2xl opacity-50 animate-pulse"></div>
                     </div>
 
                     {/* Smaller spinner */}
@@ -69,7 +69,7 @@ const InvoiceDetail = () => {
                 </div>
 
                 {/* Gradient loading text */}
-                <p className="text-lg font-semibold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text animate-pulse">
+                <p className="text-lg font-semibold text-transparent bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text animate-pulse">
                     Loading your Invoice...
                 </p>
 

@@ -149,7 +149,7 @@ const Login = () => {
             <div className="w-full max-w-sm">
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-950 to-blue-900 rounded-xl mx-auto mb-6 flex items-center justify-center">
+                    <div className="w-12 h-12 bg-linear-to-r from-blue-950 to-blue-900 rounded-xl mx-auto mb-6 flex items-center justify-center">
                         <FileText className="w-6 h-6 text-white" />
                     </div>
 
@@ -250,7 +250,7 @@ const Login = () => {
                     <button
                         onClick={handleSubmit}
                         disabled={!isFormValid() || isLoading}
-                        className="w-full bg-gradient-to-r from-blue-950 to-blue-900 text-white py-3 px-4 rounded-lg font-medium hover:bg-gray-800 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors flex items-center justify-center group"
+                        className="w-full bg-linear-to-r from-blue-950 to-blue-900 text-white py-3 px-4 rounded-lg font-medium hover:bg-gray-800 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors flex items-center justify-center group"
                     >
                         {isLoading ? (
                             <>

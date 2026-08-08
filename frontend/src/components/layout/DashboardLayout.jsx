@@ -18,7 +18,7 @@ const NavigationItem = ({ item, isActive, onClick, isCollapsed }) => {
             }`}
         >
             <Icon
-                className={`h-5 w-5 flex-shrink-0 ${
+                className={`h-5 w-5 shrink-0 ${
                     isActive ? "text-blue-900" : "text-gray-500"
                 }`}
             />
@@ -103,7 +103,7 @@ export const DashboardLayout = ({ children, activeMenu }) => {
                         className="flex items-center space-x-3"
                         to="/dashboard"
                     >
-                        <div className="h-8 w-8 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
+                        <div className="h-8 w-8 bg-linear-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
                             <Briefcase className="h-5 w-5 text-white" />
                         </div>
                         {!sidebarCollapsed && (
@@ -133,7 +133,7 @@ export const DashboardLayout = ({ children, activeMenu }) => {
                         className="w-full flex items-center px-3 py-2.5 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all duration-200"
                         onClick={logout}
                     >
-                        <LogOut className="h-7 w-7 flex-shrink-0 " />
+                        <LogOut className="h-7 w-7 shrink-0 " />
                         {!sidebarCollapsed && (
                             <span className="ml-3">Logout</span>
                         )}
